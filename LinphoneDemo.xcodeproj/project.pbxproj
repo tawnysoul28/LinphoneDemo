@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BF61EE162F49D1503EAA04F /* Pods_LinphoneDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3AC7FC6D718238C6BA4260 /* Pods_LinphoneDemo.framework */; };
 		9F4EEDB92406C9430051D913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EEDB82406C9430051D913 /* AppDelegate.swift */; };
-		9F4EEDBB2406C9430051D913 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EEDBA2406C9430051D913 /* SceneDelegate.swift */; };
 		9F4EEDBD2406C9430051D913 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EEDBC2406C9430051D913 /* ViewController.swift */; };
 		9F4EEDC02406C9430051D913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EEDBE2406C9430051D913 /* Main.storyboard */; };
 		9F4EEDC22406C9470051D913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EEDC12406C9470051D913 /* Assets.xcassets */; };
 		9F4EEDC52406C9470051D913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EEDC32406C9470051D913 /* LaunchScreen.storyboard */; };
+		9F4EEDCD2406D2C00051D913 /* VOIPDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4EEDCC2406D2C00051D913 /* VOIPDelegate.swift */; };
+		9F4EEDD22406D9870051D913 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EEDD02406D9860051D913 /* linphonerc-factory */; };
+		9F4EEDD32406D9870051D913 /* linphonerc in Resources */ = {isa = PBXBuildFile; fileRef = 9F4EEDD12406D9860051D913 /* linphonerc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C9D05F2EB1BCAE57EEC7D75 /* Pods-LinphoneDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinphoneDemo.release.xcconfig"; path = "Target Support Files/Pods-LinphoneDemo/Pods-LinphoneDemo.release.xcconfig"; sourceTree = "<group>"; };
+		85527F3103BE2A4B6106D264 /* Pods-LinphoneDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinphoneDemo.debug.xcconfig"; path = "Target Support Files/Pods-LinphoneDemo/Pods-LinphoneDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9F4EEDB52406C9430051D913 /* LinphoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinphoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4EEDB82406C9430051D913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F4EEDBA2406C9430051D913 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F4EEDBC2406C9430051D913 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F4EEDBF2406C9430051D913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4EEDC12406C9470051D913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4EEDC42406C9470051D913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4EEDC62406C9470051D913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4EEDCC2406D2C00051D913 /* VOIPDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPDelegate.swift; sourceTree = "<group>"; };
+		9F4EEDD02406D9860051D913 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
+		9F4EEDD12406D9860051D913 /* linphonerc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linphonerc; sourceTree = "<group>"; };
+		EB3AC7FC6D718238C6BA4260 /* Pods_LinphoneDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinphoneDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF61EE162F49D1503EAA04F /* Pods_LinphoneDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13FAC99BF2201F57E3322CE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85527F3103BE2A4B6106D264 /* Pods-LinphoneDemo.debug.xcconfig */,
+				2C9D05F2EB1BCAE57EEC7D75 /* Pods-LinphoneDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9F4EEDAC2406C9420051D913 = {
 			isa = PBXGroup;
 			children = (
 				9F4EEDB72406C9430051D913 /* LinphoneDemo */,
 				9F4EEDB62406C9430051D913 /* Products */,
+				13FAC99BF2201F57E3322CE6 /* Pods */,
+				C6725899AFFA2F83EAE55074 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +77,24 @@
 			isa = PBXGroup;
 			children = (
 				9F4EEDB82406C9430051D913 /* AppDelegate.swift */,
-				9F4EEDBA2406C9430051D913 /* SceneDelegate.swift */,
 				9F4EEDBC2406C9430051D913 /* ViewController.swift */,
+				9F4EEDCC2406D2C00051D913 /* VOIPDelegate.swift */,
+				9F4EEDD12406D9860051D913 /* linphonerc */,
+				9F4EEDD02406D9860051D913 /* linphonerc-factory */,
 				9F4EEDBE2406C9430051D913 /* Main.storyboard */,
 				9F4EEDC12406C9470051D913 /* Assets.xcassets */,
 				9F4EEDC32406C9470051D913 /* LaunchScreen.storyboard */,
 				9F4EEDC62406C9470051D913 /* Info.plist */,
 			);
 			path = LinphoneDemo;
+			sourceTree = "<group>";
+		};
+		C6725899AFFA2F83EAE55074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3AC7FC6D718238C6BA4260 /* Pods_LinphoneDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F4EEDC92406C9470051D913 /* Build configuration list for PBXNativeTarget "LinphoneDemo" */;
 			buildPhases = (
+				3A5A5B656543245CDC4B512D /* [CP] Check Pods Manifest.lock */,
 				9F4EEDB12406C9430051D913 /* Sources */,
 				9F4EEDB22406C9430051D913 /* Frameworks */,
 				9F4EEDB32406C9430051D913 /* Resources */,
+				FED21360B1042DEE3D90E3B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +159,55 @@
 			files = (
 				9F4EEDC52406C9470051D913 /* LaunchScreen.storyboard in Resources */,
 				9F4EEDC22406C9470051D913 /* Assets.xcassets in Resources */,
+				9F4EEDD22406D9870051D913 /* linphonerc-factory in Resources */,
+				9F4EEDD32406D9870051D913 /* linphonerc in Resources */,
 				9F4EEDC02406C9430051D913 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A5A5B656543245CDC4B512D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinphoneDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED21360B1042DEE3D90E3B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinphoneDemo/Pods-LinphoneDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinphoneDemo/Pods-LinphoneDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinphoneDemo/Pods-LinphoneDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F4EEDB12406C9430051D913 /* Sources */ = {
@@ -140,7 +216,7 @@
 			files = (
 				9F4EEDBD2406C9430051D913 /* ViewController.swift in Sources */,
 				9F4EEDB92406C9430051D913 /* AppDelegate.swift in Sources */,
-				9F4EEDBB2406C9430051D913 /* SceneDelegate.swift in Sources */,
+				9F4EEDCD2406D2C00051D913 /* VOIPDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +299,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -276,44 +353,47 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9F4EEDCA2406C9470051D913 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85527F3103BE2A4B6106D264 /* Pods-LinphoneDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94VSWFKQPL;
 				INFOPLIST_FILE = LinphoneDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.meteor.asantsev.LinphoneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9F4EEDCB2406C9470051D913 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9D05F2EB1BCAE57EEC7D75 /* Pods-LinphoneDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94VSWFKQPL;
 				INFOPLIST_FILE = LinphoneDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.meteor.asantsev.LinphoneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
